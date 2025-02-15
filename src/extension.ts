@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
 		// vscode.window.showInformationMessage('Hello World from silly-scala-editor!');
 	// });
 
-	context.subscriptions.push(vscode.commands.registerCommand('silly-scala-editor.runScala', runcode.runSelection));
+	context.subscriptions.push(vscode.commands.registerCommand('scala-repl-ext.runScala', runcode.runSelection));
 }
 
 // This method is called when your extension is deactivated

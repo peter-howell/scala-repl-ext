@@ -14,19 +14,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "scala-repl-ext.helloWorld",
-        "title": "Hello World"
-      },
-      {
-        "command": "scala-repl.runScala",
+        "command": "scala-repl-ext.runScala",
         "title": "Run Scala"
       }
     ],
     "keybindings":[
       {
-        "command": "scala-repl.runScala",
+        "command": "scala-repl-ext.runScala",
         "key": "cmd+enter",
-        "when": "editorTextFocus && editor.hasSelection && editorLangId == 'scala' && terminal.active"
+        "when": "editorTextFocus && editorLangId == 'scala' && terminal.active"
       }
     ]
   },
