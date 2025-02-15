@@ -36,7 +36,7 @@ export async function chooseTerminal(): Promise<vscode.Terminal | undefined> {
         term.show(true);
         return term;
     } else {
-        // If no valid R terminals are found, create a new one
+        // If no valid terminals are found, create a new one
         console.info(msg);
         const term = await createTerm();
         return term;
