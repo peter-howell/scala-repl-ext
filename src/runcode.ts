@@ -36,6 +36,5 @@ export async function runText(text: string | undefined): Promise<void> {
     // Scroll console to see latest output
     await vscode.commands.executeCommand('workbench.action.terminal.scrollToBottom');
     editor.selections = sel0;
-    await vscode.window.showInformationMessage('THING HAPPENED');
     
 }
